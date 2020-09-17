@@ -2,7 +2,7 @@ devnullius/yii2-admin-lte
 ======================
 adminlte3 for yii2
 
-![home](https://user-images.githubusercontent.com/3158261/80058324-8d751480-855b-11ea-87f5-3d682f787210.png)
+https://adminlte.io/themes/v3/
 
 Installation
 ------------
@@ -63,7 +63,9 @@ For example:
 ```php
 /* @var $this View */
 
-use devnullius\adminlte\assets\PluginAsset;use yii\web\View;PluginAsset::register($this)->add('sweetalert2');
+use devnullius\adminlte\assets\PluginAsset;
+
+PluginAsset::register($this)->add('sweetalert2');
 ```
 
 before this, maybe you should edit params.php:
@@ -87,7 +89,9 @@ or
 ```php
 /* @var $this View */
 
-use devnullius\adminlte\assets\PluginAsset;use yii\web\View;$bundle = PluginAsset::register($this);
+use devnullius\adminlte\assets\PluginAsset;
+
+$bundle = PluginAsset::register($this);
 $bundle->css[] = 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css';
 $bundle->js[] = 'sweetalert2/sweetalert2.min.js';
 ```
